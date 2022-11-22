@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <title>Дома</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg py-5">
+      <div class="container ">
+        <a class="navbar-brand fs-4" href="css/glavnaiya.html"><img class="me-3" src="img/logo.png">Building</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item fs-4">
+              <a class="nav-link active me-2" aria-current="page" href="/home.html">Дома</a>
+            </li>
+            <li class="nav-item fs-4">
+              <a class="nav-link text-black me-2" href="#">Услуги</a>
+            </li>
+            <li class="nav-item fs-4">
+              <a class="nav-link text-black me-2" href="#About">О нас</a>
+            </li>
+            <li class="nav-item fs-4">
+              <a class="nav-link text-black me-2" href="#feedback">Отзывы</a>
+            </li>
+            <li class="nav-item fs-4">
+              <a class="nav-link text-black me-5" href="#footer">Контакты</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link login-btn text-white"  data-bs-toggle="modal" data-bs-target="#ModalForm" href="#">Заказать звонок</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="modal fade" id="ModalForm" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header border-0 align-items-start">
+          <div class="modal-title pt-3" id="ModalFormLabel">
+            <h3 class="fw-normal">Заявка</h3>
+            <p class="f-5 m-0" style="color: #19BCE4;">на обратный звонок</p>
+          </div>
+  
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body border-0">
+          <div class="mb-3 row justify-content-between align-items-center">
+            <label for="inputName" class="col-sm-3 col-form-label text-dark">Имя *</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="inputName" placeholder="Иван Иванов">
+            </div>
+          </div>
+          <div class="mb-3 row justify-content-between align-items-center">
+            <label for="inputPhone" class="col-sm-3 col-form-label text-dark">Телефон *</label>
+            <div class="col-sm-9">
+              <input type="tel" class="form-control" id="inputPhone" placeholder="+7 921 123 45 67">
+            </div>
+          </div>
+          <div class="mb-3 row justify-content-between align-items-center">
+            <label for="inputMail" class="col-sm-3 col-form-label text-dark">E-mail</label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="inputMail" placeholder="exampel@mail.ru">
+            </div>
+          </div>
+          <div class="mb-3 row justify-content-between align-items-center">
+            <label for="inputMail" class="col-sm-4 col-form-label text-dark">Удобное время для звонка</label>
+            <div class="col-sm-7">
+              <input type="time" class="form-control" id="inputMail" placeholder="Ivan">
+            </div>
+          </div>
+          <div class="form-check row">
+            <div class="col-sm-11">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Подписаться на дайджест новостей - аналитика рынка, мнения экспертов, мероприятия, акции и спецпредложения
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer pb-3 d-flex align-items-center justify-content-center border-0">
+          <p style="font-size: 10px;" class="mb-3">Заявки обрабатываются в будни с 9 до 21, в выходные с 10 до 17. <br> Нажимая "Отправить", Вы соглашаетесь с  <a href="#" class="text-decoration-none">политикой обработки персональных данных.</a></p>
+          <button type="button" class="btn btn-lg text-white px-4" style="background: #19BCE4;">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mb-5">
+    <div class="swiper">
+      <h1 class="mb-4">Виллы в Халкидики</h1>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/villa1.png" alt="">
+            <p class="m-3">Комфортабельная вилла с двумя верандами и видом на горы, недалеко от пляжа, Неа Мудания, Халкидики, Греция
+              <br>Общая площадь 240 м² <br>Площадь земли: 6000 м² <br>3 спальни<br>2 ванные комнаты
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/villa2.png" alt="">
+            <p class="m-3">Комфортабельная вилла с террасой и видом на море, на первой линии от пляжа, Ситония, Македония и Фракия, Греция
+              <br>Общая площадь 170 м² <br>4 спальни <br>3 ванные комнаты
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki">
+            <img src="img/villa3.png" alt="">
+            <p class="m-3">Вилла в курортном поселке на побережье Эгейского моря, Ситония, Греция
+              <br>Общая площадь 110 м² <br>2 спальни<br>2 ванные комнаты
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/villa4.jpg" alt="">
+            <p class="m-3">Вилла в Кассандре, Македония и Фракия, Греция<br>Площадь земли: 140 м²
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/villa5.jpg" alt="">
+            <p class="m-3">Две виллы в сосновом лесу на побережье, Ситония, Греция<br>Общая площадь 320 м²<br>Площадь земли: 2500 м²<br>10 спален<br> 6 ванных комнат
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/villa6.jpg" alt="">
+            <p class="m-3">Трехэтажная вилла с камином, террасой и бассейном, в 200 метрах от моря, Кассандра, Халкидики, Греция
+              <br>Общая площадь 165 м² <br>Площадь земли: 451 м²<br>5 спален<br>2 ванные комнаты
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="swiper">
+      <h1 class="mb-4">Дома в Берлине</h1>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/dom1.png" alt="">
+            <p class="m-3">Просторная вилла с частным садом, гаражом, прудом и оздоровительной зоной, Берлин, Германия
+              <br>Общая площадь 747 м² <br>Площадь земли: 1570 м²
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/dom2.png" alt="">
+            <p class="m-3">Историческая вилла с большим участком в районе Грюневальд, Берлин, Германия
+              <br>Общая площадь 240 м²
+              <br>Площадь земли: 1400 м²
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki">
+            <img src="img/dom3.png" alt="">
+            <p class="m-3">Новые элитные апартаменты с сауной и гаражом, Далем, Берлин, Германия
+              <br>Общая площадь 413 м²
+              <br>Площадь земли: 977 м²
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/dom4.png" alt="">
+            <p class="m-3">Здание с четырьмя просторными апартаментами в популярном зеленом районе Грюневальд, Берлин, Германия
+              <br>Общая площадь 686 м²
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/dom5.png" alt="">
+            <p class="m-3">Новые элитные апартаменты с сауной и гаражом, Далем, Берлин, Германия
+              <br>Общая площадь 413 м² <br>Площадь земли: 977 м²
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/dom6.png" alt="">
+            <p class="m-3">Современный жилой комплекс с парковкой в районе Рудов, Берлин, Германия
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="swiper">
+      <h1 class="mb-4">Студии и офисы</h1>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/Офис.jpg" alt="">
+            <p class="m-3">Новый пентхаус в резиденции с террасой на крыше и внутренним двориком, рядом с центром Франкфурта-на-Майне, Германия
+              <br>Общая площадь 148 м² <br> 3 спальни
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/Офис2.jpg" alt="">
+            <p class="m-3">Двухкомнатные апартаменты в новой резиденции с террасой на крыше, рядом с центром Франкфурта-на-Майне, Германия
+              <br>Общая площадь 53 м² <br>1 спальня
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki">
+            <img src="img/Офис3.jpg" alt="">
+            <p class="m-3">Студия с террасой в новой резиденции с парковкой и внутренним двориком, рядом с центром Франкфурта-на-Майне, Германия
+              <br>Общая площадь 27 м² <br>1 спальня
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/Офис4.jpg" alt="">
+            <p class="m-3">Новые апартаменты в элитном небоскрёбе, Франкфурте-на-Майне, Гессен, Германия
+              <br>Построено в 2020  <br>Всего 401 квартира
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/Офис5.jpg" alt="">
+            <p class="m-3">Квартиры под аренду в новом жилом комплексе, район Вайсензее, Берлин, Германия
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card cartochki mx-3">
+            <img src="img/Офис6.jpg" alt="">
+            <p class="m-3">Просторные двухкомнатные апартаменты с видом на город, Франкфурт-на-Майне, Германия
+              <br>Общая площадь 109 м² <br> 1 спальня <br> 1 ванная комната
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="" id="footer">
+    <div class="container">
+      <div class="">
+        <div class="d-flex justify-content-between flex-column flex-lg-row">
+          <div class="footer_1">
+            <a class="navbar-brand d-flex align-items-center fs-4" href="#"><img class="me-3"
+                src="img/logo.png">Building</a>
+            <p class="mt-3">Профессиональная помощь в практическом решении любых вопросов всех регионов России.</p>
+            <div>
+              <a href=""><img class="me-3 mt-2" src="img/F.png" alt=""></a>
+              <a href=""><img class="me-3 mt-2" src="img/Tw.png" alt=""></a>
+              <a href=""><img class="me-3 mt-2" src="img/Inst.png" alt=""></a>
+              <a href=""><img class=" mt-2" src="img/in.png" alt=""></a>
+            </div>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="">Дома</a>
+              </li>
+              <li>
+                <a href="">Процессы</a>
+              </li>
+              <li>
+                <a href="">Список</a>
+              </li>
+              <li>
+                <a href="">Популярная недвижимость</a>
+              </li>
+              <li>
+                <a href="">Отзывы</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="">Услуги</a>
+              </li>
+              <li>
+                <a href="">Карта сайта</a>
+              </li>
+              <li>
+                <a href="">Тип недвижимости</a>
+              </li>
+              <li>
+                <a href="">Положения и условия</a>
+              </li>
+              <li>
+                <a href="">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="">О сайте</a>
+              </li>
+              <li>
+                <a href="">О нас</a>
+              </li>
+              <li>
+                <a href="">Мероприятия</a>
+              </li>
+              <li>
+                <a href="">Блог</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+              <li>
+                <img class="me-2" src="img/phone.png" alt=""><a href="">+888 561 258</a>
+              </li>
+              <li>
+                <img class="me-2" src="img/gogle.png" alt=""><a href="">Build@gmail.com</a>
+              </li>
+              <li>
+                <img class="me-2" src="img/playmarket.png" alt=""><a href="">Google play</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Default parameters
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 320px
+        512: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        990: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      }
+    })
+  </script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
