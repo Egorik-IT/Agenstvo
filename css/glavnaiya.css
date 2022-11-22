@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Rubik';
+}
+
+.login-btn{
+    padding: 10px 20px !important;
+    border-radius: 6px;
+    background-color: #19BCE4;
+    cursor: pointer;
+}
+
+.action{
+    background-image: url(img/fon_blok1.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+    margin-bottom: 70px;
+}
+
+.action_item{
+    border: solid #19bbe479 0.2px;
+}
+
+.action_item input{
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.action_item input::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
+.action button{
+    background: #19BCE4;
+    color: white;
+}
+
+.about h1{
+    font-size: 50px;
+}
+
+.blok_consult p{
+    width: 260px;
+}
+
+.about button{
+    background: #19BCE4;
+    color: white;
+    width: 200px;
+    height: 70px;
+}
+
+.buildings {
+    background-color: #F8FDFE;
+    margin: 150px 0;
+  }
+  
+  .buildings__item {
+    border: 1px solid #19bbe454;
+  }
+  
+  .buildings__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    height: 540px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 3 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 2 / 3 / 3 / 4; }
+
+.div1{
+    background-image: url(img/Bangladesh.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.div2{
+    background-image: url(img/Japan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.div3{
+    background-image: url(img/London.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.div4{
+    background-image: url(img/Malaysia.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.div5{
+    background-image: url(img/India.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.grid{
+    margin: 150px 0;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 90px;
+    bottom: 5%;
+    right: 50%;
+    transform: translateX(50%);
+    background: rgba(0, 95, 119, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: 0;
+    transition: .2s;
+  }
+
+  .item:hover .title{
+    opacity: 1;
+    visibility: 1;
+    transition: .2s;
+  }
+
+
+.Subcribe{
+    transform: translateY(80px) ;
+}
+
+.Subcribe .container{
+    background-color: #19BCE4;
+    border-radius: 25px;
+}
+
+.Subcribe .col-8{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Subcribe button{
+    background: #19BCE4;
+    color: white;
+    width: 150px;
+    height: 50px;
+}
+
+.Subcribe input{
+    border: none;
+    width: 500px;
+}
+
+.who{
+    margin-bottom: 100px;
+}
+
+.feedback {
+    background: #FFF8F7;
+  }
+  
+  .feedback__content {
+    background-color: #fff;
+    position: relative;
+    padding: 85px 1.5rem 1.5rem 1.5rem;
+  }
+  
+  .feedback__picture {
+    position: absolute;
+    top: -72px;
+  }
+  
+  .stars img:not(:last-child) {
+    margin-right: 5px;
+  }
+  
+  .feedback__title-text {
+    margin-bottom: 130px;
+  } 
+
+
+
+  footer{
+    padding-top: 200px;
+    padding-bottom: 80px;
+    background-color: #F8FDFE;
+}
+
+.footer_1{
+    width: 330px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin-top: 5px;
+}
+
+footer li>a{
+    text-decoration: none;
+    color: black;
+}
+
+footer li:hover:not(:first-child) a{
+    text-decoration: underline;
+    color: black;
+}
+
+footer li>a:hover{
+    color: black;
+}
+
+footer li:first-child{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:376px) {
+    .footer_1{
+        width: 100%;
+    }
+
+    ul{
+        padding: 0!important;
+    }
+}
+
+@media screen and (max-width:991px) {
+    form input{
+        margin-bottom: 15px;
+        width: auto !important;
+    }
+
+    .feedback__item{
+        margin-bottom: 120px ;
+    }
+
+    .feedback .who{
+        margin-bottom: 120px ;
+    }
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        height: 1400px;
+    }
+    .item {
+        grid-area: auto / auto / auto / auto;
+        background-position: center;
+    }
+    .title {
+        opacity: 1;
+        visibility: visible;
+    }
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/glavnaiya.css">
+  <title>Агенство недвижимости</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg py-5">
+      <div class="container ">
+        <a class="navbar-brand fs-4" href="#"><img class="me-3" src="img/logo.png">Building</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item fs-4">
+              <a class="nav-link active me-2" aria-current="page" href="/home.html">Дома</a>
+            </li>
+            <li class="nav-item fs-4">
+              <a class="nav-link text-black me-2" href="#usludi">Услуги</a>
+            </li>
+            <li class="nav-item fs-4">
+              <a class="nav-link text-black me-2" href="#About">О нас</a>
+            </li>
+            <li class="nav-item fs-4">
+              <a class="nav-link text-black me-2" href="#feedback">Отзывы</a>
+            </li>
+            <li class="nav-item fs-4">
+              <a class="nav-link text-black me-5" href="#footer">Контакты</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link login-btn text-white"  data-bs-toggle="modal" data-bs-target="#ModalForm" href="#">Заказать звонок</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+ 
+
+<div class="modal fade" id="ModalForm" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+  <div class=" modal-dialog modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header border-0 align-items-start">
+        <div class="modal-title pt-3" id="ModalFormLabel">
+          <h3 class="fw-normal">Заявка</h3>
+          <p class="f-5 m-0" style="color: #19BCE4;">на обратный звонок</p>
+        </div>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body border-0">
+        <div class="mb-3 row justify-content-between align-items-center">
+          <label for="inputName" class="col-sm-3 col-form-label text-dark">Имя *</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputName" placeholder="Иван Иванов">
+          </div>
+        </div>
+        <div class="mb-3 row justify-content-between align-items-center">
+          <label for="inputPhone" class="col-sm-3 col-form-label text-dark">Телефон *</label>
+          <div class="col-sm-9">
+            <input type="tel" class="form-control" id="inputPhone" placeholder="+7 921 123 45 67">
+          </div>
+        </div>
+        <div class="mb-3 row justify-content-between align-items-center">
+          <label for="inputMail" class="col-sm-3 col-form-label text-dark">E-mail</label>
+          <div class="col-sm-9">
+            <input type="email" class="form-control" id="inputMail" placeholder="exampel@mail.ru">
+          </div>
+        </div>
+        <div class="mb-3 row justify-content-between align-items-center">
+          <label for="inputMail" class="col-sm-4 col-form-label text-dark">Удобное время для звонка</label>
+          <div class="col-sm-7">
+            <input type="time" class="form-control" id="inputMail" placeholder="Ivan">
+          </div>
+        </div>
+        <div class="form-check row">
+          <div class="col-sm-11">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Подписаться на дайджест новостей - аналитика рынка, мнения экспертов, мероприятия, акции и спецпредложения
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer pb-3 d-flex align-items-center justify-content-center border-0">
+        <p style="font-size: 10px;" class="mb-3">Заявки обрабатываются в будни с 9 до 21, в выходные с 10 до 17. <br> Нажимая "Отправить", Вы соглашаетесь с  <a href="#" class="text-decoration-none">политикой обработки персональных данных.</a></p>
+        <button type="button" class="btn btn-lg text-white px-4" style="background: #19BCE4;">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <section class="action d-flex justify-content-center center flex-column">
+    <div class="container d-flex justify-content-center center flex-column">
+      <div class="row mb-5 pb-5">
+        <div class="col-12 text-center">
+          <h1 class="display-2 fw-bold text-white">Найди Свой Дом Мечты</h1>
+        </div>
+      </div>
+      <div class="row bg-white p-4 gx-3 gy-3">
+        <div class="col-12 col-lg-3">
+          <div class="action_item d-flex align-items-start flex-column p-2 ps-4">
+            <label for="">Расположение</label>
+            <input type="text" placeholder="California">
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="action_item d-flex align-items-start flex-column p-2 ps-4">
+            <label for="">Недвижимость</label>
+            <input type="text" placeholder="Delux">
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="action_item d-flex align-items-start flex-column p-2 ps-4">
+            <label for="">Цена</label>
+            <input type="text" placeholder="$10,000-$12,0000">
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <button class="btn w-100 h-100 fs-4">Поиск</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="About" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <img class="img-fluid" src="img/About.png" alt="">
+        </div>
+        <div class="col-12 col-lg-6 about">
+          <p class="fs-4">О нас</p>
+          <h1 class="fw-bold">Наша цель</h1>
+          <p class="mb-5 fs-5 w-75">Профессиональная помощь в практическом решении любых вопросов всех регионов России.
+            Дать возможность каждому клиенту законно, быстро, качественно и выгодно совершать сделки и операции с недвижимостью.</p>
+          <div class="d-flex blok_consult flex-column flex-lg-row">
+            <div class="me-5 mb-3">
+              <img class="mb-2" src="img/headphone.png" alt="">
+              <h2 class="fs-3">Бесплатная консультация</h2>
+              <p class="">Проконсультируем по всем волнующим вопросам.</p>
+            </div>
+            <div>
+              <img class="mb-2" src="img/hends.png" alt="">
+              <h2 class="fs-3">Лучшие члены команды</h2>
+              <p class="w-70">Средний стаж наших работников 5-7 лет.</p>
+            </div>
+          </div>
+          <button class="btn fs-4">Узнать сейчас</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 buildings" id="usludi">
+    <div class="container">
+      <h1 class="mb-5 fw-bold">Что Вы ищете?</h1>
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <img src="img/buildings-img.png" alt="" class="img-fluid h-100">
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="buildings__item d-flex align-items-center justify-content-between p-3 bg-white">
+            <img src="img/Family_House.svg" alt="" class="me-4">
+            <div class="text d-flex align-items-baseline justify-content-between flex-column">
+              <h4 class="fw-semibold">Семейный дом</h4>
+              <p>Проект дома Семейный — красивый двухэтажный коттедж, запроектированный в современном стиле. </p>
+            </div>
+          </div>
+          <div class="buildings__item d-flex align-items-center justify-content-between p-3 bg-white">
+            <img src="img/Apartment.svg" alt="" class="me-4">
+            <div class="text d-flex align-items-baseline justify-content-between flex-column">
+              <h4 class="fw-semibold">Квартира</h4>
+              <p>Вид жилого помещения, состоящий из одной или нескольких смежных комнат.</p>
+            </div>
+          </div>
+          <div class="buildings__item d-flex align-items-center justify-content-between p-3 bg-white">
+            <img src="img/Studio.svg" alt="" class="me-4">
+            <div class="text d-flex align-items-baseline justify-content-between flex-column">
+              <h4 class="fw-semibold">Студия и офисы</h4>
+              <p>Тип квартиры, основным отличием которого является отсутствие внутренних перегородок между кухней и жилыми комнатами или комнатой. </p>
+            </div>
+          </div>
+          <div class="buildings__item d-flex align-items-center justify-content-between p-3 bg-white">
+            <img src="img/Villa.svg" alt="" class="me-4">
+            <div class="text d-flex align-items-baseline justify-content-between flex-column">
+              <h4 class="fw-semibold">Вилла и квартира</h4>
+              <p>Дом в классическом римском и итальянском стиле, как правило, предназначенный для сезонного проживания.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="d-flex grid" id="best">
+    <div class="container">
+      <h1 class="text-center mb-5">Самые популярные места</h1>
+      <div class="parent">
+        <div class="div1 item">
+          <div class="title p-2">
+            <h2 class="text-white fs-4">Бангладеш</h2>
+            <p class="m-0 text-white-50 fs-5">50 Properties</p>
+          </div>
+        </div>
+        <div class="div2 item">
+          <div class="title p-2">
+            <h2 class="text-white fs-4">Япония</h2>
+            <p class="m-0 text-white-50 fs-5">50 Properties</p>
+          </div>
+        </div>
+        <div class="div3 item">
+          <div class="title p-2">
+            <h2 class="text-white fs-4">Лондон</h2>
+            <p class="m-0 text-white-50 fs-5">50 Properties</p>
+          </div>
+        </div>
+        <div class="div4 item">
+          <div class="title p-2">
+            <h2 class="text-white fs-4">Малайзия</h2>
+            <p class="m-0 text-white-50 fs-5">50 Properties</p>
+          </div>
+        </div>
+        <div class="div5 item">
+          <div class="title p-2">
+            <h2 class="text-white fs-4">Индия</h2>
+            <p class="m-0 text-white-50 fs-5">50 Properties</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback" class="feedback py-5">
+    <div class="container">
+      <h1 class="text-center fw-bold who">Что говорят люди</h1>
+      <div class="row gx-5">
+        <div class="col-lg-4 gy-5 feedback__item col-12">
+          <div class="feedback__content d-flex align-items-center justify-content-center flex-column">
+            <img src="img/fb-1.png" alt="" class="feedback__picture">
+            <h3 class="fw-bold mb-3">Макс Мардаровский</h3>
+            <div class="stars mb-3 d-flex align-items-center justify-content-between">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star_gray.svg" alt="">
+              <img src="img/Star_gray.svg" alt="">
+            </div>
+            <p class="text-center text-black-50">Хотелось бы поблагодарить  за хорошую работу! Быстро подобрали нам нужный вариант. Если понадобится опять, обратимся к Вам)))</p>
+          </div>
+        </div>
+        <div class="col-lg-4 gy-5 feedback__item col-12">
+          <div class="feedback__content d-flex align-items-center justify-content-center flex-column">
+            <img src="img/fb-2.png" alt="" class="feedback__picture">
+            <h3 class="fw-bold mb-3">Арут Назарян</h3>
+            <div class="stars mb-3 d-flex align-items-center justify-content-between">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star_gray.svg" alt="">
+            </div>
+            <p class="text-center text-black-50">Спасибо огромное  за подробную консультацию и помощь в покупке квартиры. Настоящие профессионалы своего дела!!! Приятно удивлен уровнем ваших мастеров.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 gy-5 feedback__item col-12">
+          <div class="feedback__content d-flex align-items-center justify-content-center flex-column">
+            <img src="img/fb-3.png" alt="" class="feedback__picture">
+            <h3 class="fw-bold mb-3">Иван Тургенев</h3>
+            <div class="stars mb-3 d-flex align-items-center justify-content-between">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <p class="text-center text-black-50">Мы год не могли найти квартиру, которая бы нам подошла по всем параметрам!<br>Огромное спасибо за поддержку и помощь в покупке нашей квартиры мечты!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="Subcribe">
+    <div class="container">
+      <h1 class="text-white pt-5 text-center">Для ежедневных обновлений Подпишитесь сейчас</h1>
+      <div class="row justify-content-center py-5">
+        <div class="col-8 py-3 ">
+          <form class="d-flex justify-content-between flex-column flex-lg-row  align-items-center" action="">
+            <input class="" type="text" placeholder="Введите свою почту...">
+            <button class="btn fs-5">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer id="footer" class="">
+    <div class="container">
+      <div class="">
+        <div class="d-flex justify-content-between flex-column flex-lg-row">
+          <div class="footer_1">
+            <a class="navbar-brand d-flex align-items-center fs-4" href="#"><img class="me-3"
+                src="img/logo.png">Building</a>
+            <p class="mt-3">Профессиональная помощь в практическом решении любых вопросов всех регионов России.</p>
+            <div>
+              <a href="img/Нет доступа.png"><img class="me-3 mt-2" src="img/F.png" alt=""></a>
+              <a href="img/Нет доступа.png"><img class="me-3 mt-2" src="img/Tw.png" alt=""></a>
+              <a href="img/Нет доступа.png"><img class="me-3 mt-2" src="img/Inst.png" alt=""></a>
+              <a href="img/Нет доступа.png"><img class=" mt-2" src="img/in.png" alt=""></a>
+            </div>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="">Дома</a>
+              </li>
+              <li>
+                <a href="">Процессы</a>
+              </li>
+              <li>
+                <a href="">Список</a>
+              </li>
+              <li>
+                <a href="#best">Популярная недвижимость</a>
+              </li>
+              <li>
+                <a href="#feedback">Отзывы</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="#usludi">Услуги</a>
+              </li>
+              <li>
+                <a href="img/Карта сайта.png">Карта сайта</a>
+              </li>
+              <li>
+                <a href="">Тип недвижимости</a>
+              </li>
+              <li>
+                <a href="">Положения и условия</a>
+              </li>
+              <li>
+                <a href="https://telegra.ph/1-Osnovnye-ponyatiya-ispolzuemye-v-Politike-konfidencialnosti-personalnyh-dannyh-11-20">Политика конфиденциальности</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="#About">О сайте</a>
+              </li>
+              <li>
+                <a href="#About">О нас</a>
+              </li>
+              <li>
+                <a href="">Мероприятия</a>
+              </li>
+              <li>
+                <a href="">Блог</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+              <li>
+                <img class="me-2" src="img/phone.png" alt=""><a href="">+888 561 258</a>
+              </li>
+              <li>
+                <img class="me-2" src="img/gogle.png" alt=""><a href="">Build@gmail.com</a>
+              </li>
+              <li>
+                <img class="me-2" src="img/playmarket.png" alt=""><a href="">Google play</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

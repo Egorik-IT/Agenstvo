@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Rubik';
+}
+
+.login-btn{
+    padding: 10px 20px !important;
+    border-radius: 6px;
+    background-color: #19BCE4;
+    cursor: pointer;
+}
+
+
+
+.carousel-control-prev {
+    left: -150px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(img/prev.png);
+}
+
+
+.carousel-control-next {
+    right: -150px;
+}
+
+.carousel-control-next-icon {
+    background-image: url(img/next.png);
+}
+
+
+
+
+.swiper{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: #F8FDFE;
+}
+
+.footer_1{
+    width: 330px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin-top: 5px;
+}
+
+footer li>a{
+    text-decoration: none;
+    color: black;
+}
+
+footer li:hover:not(:first-child) a{
+    text-decoration: underline;
+    color: black;
+}
+
+footer li>a:hover{
+    color: black;
+}
+
+footer li:first-child{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:376px) {
+    .footer_1{
+        width: 100%;
+    }
+
+    ul{
+        padding: 0!important;
+    }
+}
