@@ -18,7 +18,7 @@
 }
 
 .carousel-control-prev-icon {
-    background-image: url(img/prev.png);
+    background-image: url(../img/prev.png);
 }
 
 
@@ -27,7 +27,7 @@
 }
 
 .carousel-control-next-icon {
-    background-image: url(img/next.png);
+    background-image: url(../img/next.png);
 }
 
 
